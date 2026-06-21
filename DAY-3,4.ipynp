@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPTHIH5DXZoHtHJAGhkc29m",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sowntharyakmr-boop/Data-Analysis-using-Python-Project/blob/main/DAY-3%2C4.ipynp\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "O4Ys4D6o5hf3",
+        "outputId": "05cc1145-81b6-41e0-8ef4-4d1de21c3f10"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "70\n"
+          ]
+        }
+      ],
+      "source": [
+        "import numpy as np\n",
+        "marks = np.array([56,89,80,70])\n",
+        "print(marks[3])\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def calculate_average(a,b,c):\n",
+        "  return(a+b+c)/3\n",
+        "\n",
+        "try:\n",
+        "  a=int(input(\"Enter 1st number:\"))\n",
+        "  b=int(input(\"Enter 2nd number:\"))\n",
+        "  c=int(input(\"Enter 3rd number:\"))\n",
+        "  print(\"calculate_average=\",calculate_average(a,b,c))\n",
+        "except ValuError:\n",
+        "  print(\"Invalid Input\")\n",
+        "  print(\"Invalid Input\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uCFut-Ma5y7T",
+        "outputId": "06bdfc2e-016b-424d-fd6e-6e58bca8ef1f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter 1st number:70\n",
+            "Enter 2nd number:80\n",
+            "Enter 3rd number:69\n",
+            "calculate_average= 73.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
